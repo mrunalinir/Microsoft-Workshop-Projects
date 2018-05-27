@@ -1,0 +1,44 @@
+<html><body>
+	<script>
+	function dis()
+	{
+		var a=document.getElementById("age").value;
+		try
+		{
+		if(isNaN(a))
+		{
+			throw("Enter a number as age")
+		}
+		else
+		{
+		a=eval(a);
+		if(!a)
+			throw("Age field must not be empty");
+		
+		else if(a>0 && a<100)
+			alert("Valid input. Age is "+a);
+		
+		else if(a<=0 || a>=100)
+			throw("Enter a valid age");
+		
+		}
+		}
+		catch(e)
+		{
+			alert("Error: " + e)
+		}
+	}
+	</script>
+	<table>
+	<tr>
+		<td>Enter age:</td>
+		<td><input type="text" id="age"></td>
+	</tr>
+	<tr>
+		<td><input type="button" value="OK" onclick="dis()"></td>
+	</tr>
+	</table>
+</body>
+</html>
+
+

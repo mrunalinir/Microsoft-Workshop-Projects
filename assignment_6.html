@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+	function myFunc(){
+		var elema=document.getElementById("contenta");
+		var elemb=document.getElementById("contentb");
+		var posa=0;
+		var posb=0;
+		var ida=setInterval(framea,5);
+		var idb=setInterval(frameb,5);
+		function framea(){
+			if(posa==350){
+				clearInterval(ida);
+				}
+			else{
+				posa++;
+				elema.style.top=posa+'px';
+				elema.style.left=posa+'px';
+				}
+		}
+		function frameb(){
+			if(posb==350){
+				clearInterval(idb);
+				}
+			else{
+				posb++;
+				elemb.style.top=posb+'px';
+				elemb.style.right=posb+'px';
+				}
+	}}
+</script>
+
+<style>
+	.row{width:400px;
+	height:400px;
+	position: relative;
+	background: #456;
+	}
+	
+	.cola{
+	width:50px;
+	height: 50px;
+	position: absolute;
+	background-color: green;
+	}
+
+	.colb{
+	width:50px;
+	height: 50px;
+	position: relative;
+	background-color: green;
+	}
+</style>	
+
+<body>
+		<p>
+			<button onclick="myFunc()">Click me</button>
+		</p>
+		<div id="container" class="row">
+			<div id="contenta" class="cola"></div>
+			<div align="right">
+			<div id="contentb" class="colb"></div>
+			</div>
+			
+		</div>
+</body>
+</html>

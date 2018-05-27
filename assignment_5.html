@@ -1,0 +1,186 @@
+<html>
+<style>
+.topnav
+{
+	overflow: hidden;
+	background-color: #0d3687;
+}
+	
+.topnav a
+{
+	float: left;
+	display: block;
+	color: white;
+	background-color: #0d3687;
+	padding:14px 16px;
+}
+
+body{
+	background-color: #F2F2F2;
+	text-align: center;
+	}
+	
+
+input[type=text], select
+{
+	width:30%;
+	padding:12px 20px;
+	display: inline-block;
+	border:1px solid #ccc;
+	border-radius:8px;
+	box-sizing: border-box;
+}
+
+fieldset
+{
+	background-color: #7FF35D;
+	width: 70%;
+	text-align: center;
+	margin-left: 165px;
+}
+
+form
+{
+	text-align: center;
+}
+
+legend
+{
+	background-color: #7FF35D;
+	border: border-box;
+	border-color: 1px black ;
+	
+}
+
+textarea {
+    width: 50%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+}
+
+input[type=submit]
+{
+	width:10%;
+	background-color: #0d3687;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border-radius:8px;
+	cursor: pointer;
+}
+input[type=submit]:active
+{
+	transform: translateY(5px);
+}
+
+input[type=reset]
+{
+	width:10%;
+	background-color: #0d3687;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border-radius:8px;
+	cursor: pointer;
+}
+input[type=reset]:active
+{
+	transform: translateY(5px);
+}
+div
+{
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 20px;
+}
+
+</style>
+
+<body>
+	<div class="topnav">
+	Enter data about yourself
+	</div>
+	
+	<br>
+	
+	<form id="Details" align="center">
+	
+		<fieldset align="center">
+			<legend align="center" required>Name</legend>
+			First Name:<br>
+			<input type="text" name="fn" placeholder="Enter your name" required autofocus><br>
+			Last Name:<br>
+			<input type="text" name="ln" placeholder="Enter your last name" required><br>
+		</fieldset>
+		
+		<br>
+		
+		<fieldset>
+			<legend align="center" >Gender:</legend>
+			<input type="radio" name="Gender" value="male" required>Male<br>
+			<input type="radio" name="Gender" value="female">Female<br>
+			<input type="radio" name="Gender" value="other">Other<br>
+		</fieldset>
+	
+		<br>
+
+		<fieldset>
+			<legend align="center" >Location</legend>
+			<select name="location">
+			<option value="Hyderabad" required>Hyderabad</option>
+			<option value="Bangalore">Bangalore</option>
+			<option value="Mumbai">Mumbai</option>
+			<option value="Kolkata">Kolkata</option>
+			<option value="Chennai">Chennai</option>
+			<option value="Other">Other</option>
+			</select>
+		</fieldset>
+		
+		<br>
+		
+		<fieldset>
+			<legend align="center">Favourite color</legend>
+			<input type="color" name="favcolor">
+		</fieldset>
+		
+		<br>
+		
+		<fieldset>
+			<legend align="center">Date of Birth</legend>
+			<input type="date" name="BDay" required>
+		</fieldset>
+		
+		<br>
+		
+		<fieldset>
+			<legend align="center">Places you want to visit</legend>
+			<input type="checkbox" value="Paris">Paris<br>
+			<input type="checkbox" value="Brazil">Brazil<br>
+			<input type="checkbox" value="Los Angeles">Los Angeles<br>
+			<input type="checkbox" value="China">China<br>
+			<input type="checkbox" value="Malaysia">Malaysia<br>
+		</fieldset>
+				
+		<br>
+		
+		<fieldset>
+			<legend align="center">Additional Information</legend>
+			<textarea placeholder="Enter text here">
+			</textarea>
+		</fieldset>
+		
+		<br/>
+		
+		<input type="submit" value="submit">
+		<input type="reset" value="reset"><br>
+	
+	</form>
+
+
+</body>
+</html>

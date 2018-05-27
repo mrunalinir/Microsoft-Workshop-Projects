@@ -1,0 +1,85 @@
+<html>
+<h1> Student Marks Entry </h1>
+<body>
+<script>
+//Take the marks of 5 subjects as input and display the total as well as the percentage marks as output
+
+function dis()
+{
+	var a=eval(document.getElementById("subj1").value);
+	var b=eval(document.getElementById("subj2").value);
+	var c=eval(document.getElementById("subj3").value);
+	var d=eval(document.getElementById("subj4").value);
+	var e=eval(document.getElementById("subj5").value);
+	var f=eval(document.getElementById("maxt").value);
+	var t=a+b+c+d+e;
+	var t1=document.getElementById("ti").value=t;
+	var av=(t/f)*100;
+	var av1=document.getElementById("avi").value=av;
+	var s;
+	
+}
+</script>
+</head>
+<body>
+<table>
+	<tr>
+		<td>Name:</td>
+		<td><input type="text"></td>
+	</tr>
+	<tr>
+		<td>ID:</td>
+		<td><input type="text"></td>
+	</tr>
+	<tr>
+		<td>Subject 1:</td>
+		<td><input type="text" id="subj1"></td>
+	</tr>
+	<tr>
+		<td>Subject 2:</td>
+		<td><input type="text" id="subj2"></td>
+	</tr>
+	<tr>
+		<td>Subject 3:</td>
+		<td><input type="text" id="subj3"></td>
+	</tr>
+	<tr>
+		<td>Subject 4:</td>
+		<td><input type="text" id="subj4"></td>
+	</tr>
+	<tr>
+		<td>Subject 5:</td>
+		<td><input type="text" id="subj5"></td>
+	</tr>
+	<tr>
+		<td>Maximum Total:</td>
+		<td><input type="text" id="maxt"></td>
+	</tr>
+	<tr>
+		<td>Total:</td>
+		<td><input type="text" id="ti"></td>
+	</tr>
+	<tr>
+		<td>Percentage:</td>
+		<td><input type="text" id="avi"></td>
+		<td>%</td>
+	</tr>
+	<tr>
+		<td colspan="2"><input type="button" value="Result" onclick="dis()"></td>
+	</tr>
+</body>
+</html>	
+
+
+
+
+
+
+
+
+
+
+
+
+
+

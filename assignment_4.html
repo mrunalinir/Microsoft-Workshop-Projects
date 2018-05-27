@@ -1,0 +1,38 @@
+<html>
+<h3> Pattern </h3>
+<body>
+<script>
+var i=0;
+var j=0;
+function dis()
+{
+	var n=document.getElementById("num").value
+	if(n>0 && n%1==0)
+	{
+		for(i=1;i<=n;i++)
+		{
+			for(j=1;j<=i;j++)
+			{
+				if(j<10)
+				{
+					document.write("0"+j+" ")
+				}
+				else if(j>=10)
+				{
+					document.write(+j+" ")
+				}
+			}
+			document.write("<br/>")
+		}
+	}	
+	else
+	{
+		alert("Invalid Entry. Enter an integral number that is greater than 0.")
+	}
+}
+</script>
+Enter your number
+<input type="text" id="num"><br>
+<input type="button" value="OK" onclick="dis()">
+</body>
+</html>	

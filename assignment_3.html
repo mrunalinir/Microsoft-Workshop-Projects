@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+	
+	th,td{padding:14px}
+  input[type=button]
+{
+  background-color: #52A898;
+  border: none;
+  color: white;
+  padding: 14px 22px;
+  text-align: center;
+  font-size: 16px;
+  margin: 2px 2px;
+  opacity: 1.3;
+  border-radius:8px;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+input[type=button]:hover {opacity: 0.5}
+input[type=button]:active {
+  
+  transform: translateY(5px);
+}
+input[type=text]
+{width:300px;
+ padding:6px;
+ border-radius:6px;
+}
+
+div.e1{
+width:280px;
+padding:30px;
+background-color:#52A898;
+font-family:verdana;
+font-size:25px;
+color:#FFFFFF;
+text-align: center;
+margin-left:37.3%;
+
+}
+table{
+border-collapse: collapse;
+border:2px #52A898;
+}
+	
+	</style>
+</head>
+<div class="e1"> CALCULATOR </div>
+<head>
+<div style="background-color:#b3b3b3; height:3; border-left: 2px teal solid; left:487px;border-right: 2px teal solid; right:472px; position:absolute; text-align:center; border-top: 2px teal solid; border-bottom: 2px teal solid;">
+<br>
+	
+	<form id="f">
+	<input type="text" id="t1" style="text-align:center;" >
+	<table align="center">
+	<tr>
+		<td><input type="button" id="b1" value="1" onclick="f.t1.value+=1"></td>
+		<td><input type="button" id="b2" value="2" onclick="f.t1.value+=2"></td>
+		<td><input type="button" id="b3" value="3" onclick="f.t1.value+=3"></td>
+		<td><input type="button" id="ba" value="+" onclick="f.t1.value=f.t1.value+'+'"></td>
+	</tr>
+	<tr>
+		<td><input type="button" id="b4" value="4" onclick="f.t1.value+=4"></td>
+		<td><input type="button" id="b5" value="5" onclick="f.t1.value+=5"></td>
+		<td><input type="button" id="b6" value="6" onclick="f.t1.value+=6"></td>
+		<td><input type="button" id="bb" value="-" onclick="f.t1.value=f.t1.value+'-'"></td>
+	</tr>
+	<tr>
+		<td><input type="button" id="b7" value="7" onclick="f.t1.value+=7"></td>
+		<td><input type="button" id="b8" value="8" onclick="f.t1.value+=8"></td>
+		<td><input type="button" id="b9" value="9" onclick="f.t1.value+=9"></td>
+		<td><input type="button" id="bc" value="*" onclick="f.t1.value=f.t1.value+'*'"></td>
+	<tr>
+		<td><input type="button" id="bd" value="C" onclick="f.t1.value=''"></td>
+		<td><input type="button" id="b0" value="0" onclick="f.t1.value=f.t1.value+0"></td>
+		<td><input type="button" id="be" value="=" onclick="f.t1.value=eval(f.t1.value)"></td>
+		<td><input type="button" id="bf" value="/"onclick="f.t1.value=f.t1.value+'/'"></br>
+	</td>
+	</table>
+	</form>
+	
+</head>
+<body style="background-color:black;">
+</body>
+
+</html>
+
+
+
